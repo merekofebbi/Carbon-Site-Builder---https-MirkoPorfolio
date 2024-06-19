@@ -4,7 +4,7 @@ title: "TABARNAK"
 author: "Generic Human 2"
 categories: facts
 tags: [sample]
-image: cuba-2.jpg
+image: ![image]( https://i.ibb.co/0hNm38G/social-collaps.png)
 ---
 
 iufbod;lnvkbc;mzngibdsvckj ,vd
