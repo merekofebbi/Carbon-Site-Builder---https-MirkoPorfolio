@@ -2,5 +2,5 @@
 layout: category
 title: Sample Posts
 category: sample
-permalink: /page/about
+permalink: /sample-posts
 ---
