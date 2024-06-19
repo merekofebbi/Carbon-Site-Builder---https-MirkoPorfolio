@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Millennial!"
+title: "THIS IS A TEST"
 author: "Paul Le"
 categories: documentation
 tags: [documentation,sample]
