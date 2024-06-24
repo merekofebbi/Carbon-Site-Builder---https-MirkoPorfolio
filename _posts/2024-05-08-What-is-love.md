@@ -4,10 +4,10 @@ title: "MECHANICUS"
 author: "Generic Human 2"
 categories: facts
 tags: [sample]
-image: https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg
+image: "https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg"
 ---
 
-# MECHANICUS
+# MECHANICUS 2sds
 ###### Date: 08/10/2022
 ###### Status: Completed
 ## Overview
