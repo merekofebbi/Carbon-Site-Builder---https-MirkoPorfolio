@@ -4,7 +4,7 @@ title: "MECHANICUS"
 author: "Generic Human 2"
 categories: facts
 tags: [sample]
-image: ![image](https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg)
+image: "https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg"
 ---
 
 # MECHANICUS
