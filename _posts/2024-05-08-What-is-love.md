@@ -7,7 +7,7 @@ tags: [sample]
 image: "https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg"
 ---
 
-# MECHANICUS 2sds
+# MECHANICUS
 ###### Date: 08/10/2022
 ###### Status: Completed
 ## Overview
