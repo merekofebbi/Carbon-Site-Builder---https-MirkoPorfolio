@@ -2,6 +2,6 @@
 layout: home
 ---
 
-# Bienvenide
+# Salut touts le monde
 
-Hoola carepalo
+C'est mon cite
