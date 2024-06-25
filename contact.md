@@ -6,7 +6,7 @@ permalink: /contact
 # This is my contact page
 
 *mirkofebbo@gmail.com*
-
+---
 **Goldsmiths University of London
 17-19 St-James Hatcham House
 M.Febbo@gold.ac.uk
