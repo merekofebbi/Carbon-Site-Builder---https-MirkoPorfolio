@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about
 ---
-es5udryitfuglihklsjdnglvbdk.sla,dj vbldkrgbflviajshgw
+YO I CHANGED THIS 
 
 
 ![image](https://i.ibb.co/0hNm38G/social-collaps.png)
