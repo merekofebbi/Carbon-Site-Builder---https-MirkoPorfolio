@@ -2,6 +2,6 @@
 layout: home
 ---
 
-# Salut touts le monde
+# Salut tout le monde
 
 C'est mon cite
