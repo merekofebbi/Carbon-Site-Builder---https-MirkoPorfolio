@@ -1,88 +1,30 @@
-# FREE JEKYLL THEME Wind: A Minimalistic, Simple, and Beautiful Blogging Theme
-
-![Theme Logo or Screenshot](https://i.postimg.cc/PqYsQX71/Wind-Write-an-awesome-description-for-your-new-site-here-You-can-edit-this-line-in-config-yml-It.png)
-
-## Description
-
-Wind is a clean, minimalistic Jekyll theme designed to offer a delightful blogging experience. With a focus on simplicity and aesthetics, Wind brings an elegant touch to your blog or personal website.
-
-## Sites Using It (If you have a site using this theme please send me a PR including it here)
-
-- https://estabien.cl
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-1. **Responsive Design:** Wind offers a thoughtfully crafted responsive design that ensures your blog looks stunning and functions flawlessly on a variety of devices, including desktops, tablets, and smartphones. Your content remains accessible and visually appealing, no matter how your audience chooses to engage with it.
-
-2. **Blog-Centric Focus:** Wind is tailored for bloggers, putting the spotlight on your content. Its clean and minimalistic design highlights your articles, providing readers with an uncluttered and immersive reading experience.
-
-3. **Tags Page:** Easily categorize and organize your blog posts using tags. Wind includes a dedicated Tags page that allows your readers to find and explore posts by tag, making content discovery and navigation a breeze.
-
-4. **Disqus Integration:** Engage with your audience through the built-in Disqus commenting system. Enable discussions on your blog posts to encourage interaction, receive feedback, and foster a sense of community.
-
-5. **Customizable Head Section:** Wind empowers you to customize the theme's `<head>` section, enabling you to insert various scripts, such as Google Analytics, social media meta tags, or any other third-party integrations you require to enhance your website's functionality and insights.
-
-6. **Dark Mode:** Wind provides a dark mode feature, allowing readers to switch to a more comfortable reading experience in low-light conditions. Enhance accessibility and cater to different user preferences effortlessly.
-
-7. **Go Up Button:** Enhance user navigation with the "Go Up" button. This feature enables users to quickly return to the top of the page, offering a convenient and user-friendly browsing experience.
-
-8. **Social Media Integration:** Seamlessly link your social media profiles to your blog, making it simple for your readers to connect with you on various platforms. Enhance your online presence and grow your social media following by leveraging Wind's integrated social media links.
-
-9. **SEO Optimized:** Wind is designed with search engine optimization (SEO) in mind. Its clean code, structured metadata, and user-friendly URL structure help improve your blog's visibility on search engines, driving organic traffic to your site.
-
-10. **Cross-Browser Compatibility:** Ensure your blog looks and performs consistently across a wide range of web browsers, providing an optimal experience for all visitors.
-
-11. **Accessibility Features:** Wind adheres to accessibility best practices, ensuring that your content is accessible to users with disabilities. This inclusivity enhances the reach and usability of your blog.
-
-12. **RSS Feed Support:** Wind includes RSS feed support, allowing your readers to subscribe to your blog and receive updates when new content is published.
-
-13. **Author Profile:** Personalize your blog by adding an author profile section, allowing you to share information about yourself and connect with your audience on a more personal level.
+<div align="center">
+  <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br/>
+  Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
+  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md.<br/>
+  Running <code>bundle show minima</code> will provide you with the local path to your current theme version.</em></p>
+  <img src="/readme_banner.svg"/>
+  <p>It's Jekyll's default (and first) theme. It's what you get when you run <code>jekyll new</code>.</p>
+  <p><a href="https://jekyll.github.io/minima/">Theme preview</a></p>
+  <p><img src="/screenshot.png"/></p>
+</div>
 
 ## Installation
 
-To use the Wind Jekyll theme as a Ruby Gem in your Jekyll site, follow these steps:
+Add this line to your Jekyll site's Gemfile:
 
-1. **Add Wind Gem to your Gemfile:** Open your Jekyll project's `Gemfile` and add the following line to the `jekyll_plugins` group:
 ```ruby
-gem "wind-theme"
+gem "minima"
 ```
 
-2. **Install Gems:** In your project's root directory, run the following command to install the Wind Gem and its dependencies:
-```
-bundle install
-```
+And then execute:
 
-3. **Configure Wind Theme:** Open your Jekyll project's _config.yml file, and set the theme key to "wind":
-```yalm
-theme: wind-theme
-```
+    $ bundle
 
-4. **Use the layouts provided by the theme:** open your index.md or index.markdown page of your jekyll site and put it on the Front Matter section:
-```
----
-layout: home
----
 
-```
+## Contents At-A-Glance
 
-5. **Local Development:** Run the following command to preview your Jekyll site locally:
-```
-bundle exec jekyll serve
-```
-
-## Usage
-
-Wind has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
+Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 
 ### Layouts
 
@@ -92,27 +34,47 @@ Refers to files within the `_layouts` directory, that define the markup for your
     contents into this file at the line that says ` {{ content }} ` and are linked to this file via
     [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: base`.
   - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
-  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts. Example about.md page.
+  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
   - `post.html` &mdash; The layout for your posts.
-  - `galley.html` &mdash; The layout for a image galley.
+
+#### Base Layout
+
+From Minima v3 onwards, the base layout is named **`base.html`** instead of `default.html` to avoid confusing new users into
+assuming that name holds special status.
+
+Users migrating from older versions with customized `_layouts/default.html` are advised to rename their copy to
+`_layouts/base.html`. Migrating users with additional customized layouts may either update front matter references to former
+`default.html` layout or create a new `default.html` layout referencing the current `base.html`, whichever route being the
+easiest:
+
+```
+---
+# new `_layouts/default.html` for backwards-compatibility when multiple
+# layouts have been customized.
+
+layout: base
+---
+
+{{ content }}
+```
 
 #### Home Layout
 
-`home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. 
+`home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. <br/>
 
 ##### *Main Heading and Content-injection*
 
-The *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** section. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *I recommended that you title this section with a Heading2 (`##`)*.
+From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
-#### Gallery Layout
+Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
-This Layout needs a data file with the name `_data/gallery.yml` and the following structure:
-```
-photos:
-  - url: path/to/your/photo.png
-    description: Alt for the image
-    quote: text on hover
-```
+##### *Post Listing*
+
+This section is optional from Minima v2.2 onwards.<br/>
+It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
+
+The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
+
 
 ### Includes
 
@@ -120,16 +82,165 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 
   - `disqus_comments.html` &mdash; Code to markup disqus comment box.
   - `footer.html` &mdash; Defines the site's footer section.
+  - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
   - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `navbar.html` &mdash; Defines the site's navbar section. By default, `title` is used in the left section and main pages are displayed in the rigth section.
-  - `up_button.html` &mdash; Includes the code related to the up button.
+  - `social.html` &mdash; Renders social-media icons based on the `minima:social_links` data in the config file.
+  - `social-item.html` &mdash; Template to render individual list-item containing graphic link to configured social-profile.
+  - `social-links/*.svg` &mdash; SVG markup components of supported social-icons.
 
 
-## Configuration
+### Sass
 
-The template needs at least `title` and `author` settings in your `_config.yml` for works fine. The title is used in the nabvar section and the author is displayed in the posts.
+Refers to `.scss` files within the `_sass` directory that define the theme's styles.
+
+  - `minima/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
+  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
+    It imports the following components (in the following order):
+    - `minima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
+    - `minima/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
+    - `minima/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
+    - `minima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
+
+Refer the [skins](#skins) section for more details.
+
+
+### Assets
+
+Refers to various asset files within the `assets` directory.
+
+  - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
+    stylesheet: `assets/css/styles.css`.
+  - `assets/minima-social-icons.html` &mdash; Imports enabled social-media icon graphic and gets processed into a composite SVG file.
+    Refer [section on social networks](#social-networks) for its usage.
+
+
+### Plugins
+
+Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
+
+
+## Usage
+
+Have the following line in your config file:
+
+```yaml
+theme: minima
+```
+
+
+### Customizing templates
+
+To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+
+The site's default CSS has now moved to a new place within the gem itself, [`assets/css/style.scss`](assets/css/style.scss).
+
+In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
+*CSS overrides* in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
+variables and mixins inside a sass file placed at `_sass/minima/custom-variables.scss` and all other overrides inside a sass file
+placed at path `_sass/minima/custom-styles.scss`.
+
+You need not maintain entire partial(s) at the site's source just to override a few styles. However, your stylesheet's primary
+source (`assets/css/style.scss`) should contain the following:
+
+  - Front matter dashes at the very beginning (can be empty).
+  - Directive to import a skin.
+  - Directive to import the base styles (automatically loads overrides when available).
+
+Therefore, your `assets/css/style.scss` should contain the following at minimum:
+
+```sass
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+```
+
+#### Skins
+
+Minima 3.0 supports defining and switching between multiple color-palettes (or *skins*).
+
+```
+.
+├── minima.scss
+└── minima
+    └── _syntax-highlighting.scss
+```
+
+
+A skin is a Sass file placed in the directory `_sass/minima/skins` and it defines the variable defaults related to the "color"
+aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
+has to be adjusted in harmony with the current skin.
+
+The default color palette for Minima is defined within `_sass/minima/skins/classic.scss`. To switch to another available skin,
+simply declare it in the site's config file. For example, to activate `_sass/minima/skins/dark.scss` as the skin, the setting
+would be:
+
+```yaml
+minima:
+  skin: dark
+```
+
+As part of the migration to support skins, some existing Sass variables have been retired and some **have been redefined** as
+summarized in the following table:
+
+Minima 2.0      | Minima 3.0
+--------------- | ----------
+`$brand-color`  | `$link-base-color`
+`$grey-*`       | `$brand-*`
+`$orange-color` | *has been removed*
+
+##### Available skins
+
+Skin setting    | Description
+--------------- | -----------
+classic         | Default, light color scheme.
+dark            | Dark variant of the classic skin.
+auto            | *Adaptive skin* based on the default classic and dark skins.
+solarized       | *Adaptive skin* for [solarized](https://github.com/solarized) color scheme skins.
+solarized-light | Light variant of solarized color scheme.
+solarized-dark  | Dark variant of solarized color scheme.
+
+*:bulb: Adaptive skins switch between the "light" and "dark" variants based on the user's operating system setting or browser setting
+(via CSS Media Query [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)).*
+
+### Customize navigation links
+
+This allows you to set which pages you want to appear in the navigation area and configure order of the links.
+
+For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
+
+```yaml
+header_pages:
+  - about.md
+  - portfolio.md
+```
+
+
+### Change default date format
+
+You can change the default date format by specifying `site.minima.date_format`
+in `_config.yml`.
+
+```
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+```
+
+
+### Extending the `<head />`
+
+You can *add* custom metadata to the `<head />` of your layouts by creating a file `_includes/custom-head.html` in your source directory. For example, to add favicons:
+
+1. Head over to [https://realfavicongenerator.net/](https://realfavicongenerator.net/) to add your own favicons.
+2. [Customize](#customization) default `_includes/custom-head.html` in your source directory and insert the given code snippet.
+
 
 ### Enabling comments (via Disqus)
 
@@ -150,56 +261,119 @@ Comments are enabled by default and will only appear in production, i.e., `JEKYL
 
 If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
 
-## Customization
+### Author Metadata
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+From `Minima-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
 
-### Footer
+```yaml
+author:
+  name: John Smith
+  email: "john.smith@foobar.com"
+```
 
-To customize the text in the footer:
+To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:
 
-1. Declare your site language in the `_config.yml` file:
+Minima 2.x    | Minima 3.0
+------------- | -------------------
+`site.author` | `site.author.name`
+`site.email`  | `site.author.email`
 
-   ```yaml
-   language: "your_language_code"
-   ```
 
-2. Create a language `data` file in the data folder, using your site language code (e.g., `es.yml` for Spanish).
+### Social networks
 
-3. Customize the footer variables in the language data file:
+You can add links to the accounts you have on other sites, with respective icon as an SVG graphic, via the config file.
+From `Minima-3.0` onwards, the social media data is sourced from config key `minima.social_links`. It is a list of key-value pairs, each entry
+corresponding to a link rendered in the footer. For example, to render links to Jekyll GitHub repository and Twitter account, one should have:
 
-    ```yml
-    footer:
-      title: "Mantengamosnos conectados"
-      description: "Puesdes encontrarme en cualquiera de estos canales:"
-      pages: "Paginas"
+```yaml
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
+```
+
+Apart from the necessary keys illustrated above, `title` may also be defined to render a custom link-title. By default, the title is the same
+as `platform`. The `platform` key corresponds to the SVG id of the sprite in the composite file at URL `/assets/minima-social-icons.svg`.
+
+The theme ships with an icon for `rss` and icons of select social-media platforms:
+
+- `codeberg`
+- `devto`
+- `dribbble`
+- `facebook`
+- `flickr`
+- `github`
+- `gitlab`
+- `google_scholar`
+- `instagram`
+- `keybase`
+- `linkedin`
+- `mastodon`
+- `microdotblog`
+- `pinterest`
+- `stackoverflow`
+- `telegram`
+- `twitter`
+- `whatsapp`
+- `x`
+- `youtube`
+
+To render a link to a platform not listed above, one should first create a file at path `_includes/social-icons/<PLATFORM>.svg` comprised of
+graphic markup **without the top-level `<svg></svg>`**. The icon is expected to be centered within a viewbox of `"0 0 16 16"`. Then, make an
+entry under key `minima.social_links`.
+
+For example, to render a link to an account of user `john.doe` at platform `deviantart.com`, the steps to follow would be:
+  - Get DeviantArt logo in SVG format.
+  - Using a text-editor, open the downloaded file to inspect if the `viewBox` attribute is defined on the `<svg>` element and is set
+    as `"0 0 16 16" (or similar "square" dimension)`.
+  - If the `viewBox` attribute is non-square or undefined, the graphic *may optionally need* to be edited in a vector graphic editor such as
+    *Inkscape* or *Adobe Illustrator* for properly aligned render on page.
+  - Edit the SVG file in text-editor to delete everything **except** what is contained between `<svg></svg>` and save it into the Jekyll
+    project at path `_includes/social-icons/deviantart.svg`.
+  - Finally, edit the Jekyll config file to enable loading of new icon graphic with:
+    ```yaml
+    minima:
+      social_links:
+        - platform: deviantart  # same as SVG filename.
+          user_url: "https://www.deviantart.com/john.doe"  # URL of profile page.
+          title:  My profile at DeviantArt.com  # Optional. Text displayed on hovering over link.
     ```
-Adjust the values of title, description, and pages as needed.
 
-### Plugins
+**Notes:**
+- The list of social-links is declarative. List-items are rendered in the order declared in the downstream configuration file and not merged
+  with entries from upstream config file(s) such as theme-config-file or prior local config files.
+- The `user_url` is rendered as given without handling any special characters within.
 
-Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
 
-## License
+### Enabling Google Analytics
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+To enable Google Analytics, add the following lines to your Jekyll site:
+
+```yaml
+  google_analytics: UA-NNNNNNNN-N
+```
+
+Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+
+### Enabling Excerpts on the Home Page
+
+To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
+
+```yaml
+show_excerpts: true
+```
+
 
 ## Contributing
 
-We welcome contributions from the community! If you'd like to contribute to the project, please follow these guidelines:
+Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
-3. Make your changes and commit them: `git commit -m 'Description of your changes'`.
-4. Push your changes to the branch: `git push origin feature-name`.
-5. Submit a pull request.
+## Development
 
-Please ensure that your pull request includes a clear description of the problem you are solving and the solution implemented. Also, make sure your code follows the project's coding standards.
+To set up your environment to develop this theme, run `script/bootstrap`.
 
-## Support or Contact
+To test your theme, run `script/server` (or `bundle exec jekyll serve`) and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme and the contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
-If you need help or have questions, you can [contact me](mailto:andres.ch@proton.me).
+## License
 
-
-
+The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

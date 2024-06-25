@@ -3,7 +3,7 @@ layout: page
 title: Contact
 permalink: /contact
 ---
-# Reachout
+# Contact me
 
 *mirkofebbo@gmail.com*
 ---
