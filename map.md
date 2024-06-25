@@ -1,3 +1,8 @@
+---
+layout: page
+title: Map
+permalink: /map
+---
 <iframe
   width="600"
   height="450"
