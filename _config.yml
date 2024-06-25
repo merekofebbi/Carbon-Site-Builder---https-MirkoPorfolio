@@ -1,7 +1,7 @@
-title: Your awesome title
+title: Mirko Febbo
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Mirko Febbo
+  email: mirkofebbo@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -30,6 +30,8 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
+  - contact.md
+  - map.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
