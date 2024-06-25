@@ -1,17 +1,9 @@
 ---
-title: about
 layout: page
+title: About
+permalink: /about
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+# Mirko Febbo
+### I make stuff 
+--- 
+I am a human, artist and researcher, exploring the intersection of art, technology, and geopolitics. With a background in sculpture from Concordia University in Montreal, in addition to holding a data science certificate from HarvardX, and a masters in computational arts from Goldsmiths University. I am particularly interested in the ways in which data visualisation and kinetic art can be used to convey complex information in a more engaging and interactive way. I frequently incorporate digital media and fabrication techniques into my artistic practice.
