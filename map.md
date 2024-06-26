@@ -13,7 +13,7 @@ permalink: /map
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANx5ELozX0dIchLEQ7jAyVFV019xhsmeA&q=Space+Needle,Seattle+WA">
 </iframe> -->
 
-# World Map
+# Interactive World Map
 <div style="position: relative; display: inline-block;">
     <img src="https://mirkoPortfolio.b-cdn.net/High-Resolution-World-Map-scaled.jpg" alt="World Map">
     <a href="/Carbon-Site-Builder---https-MirkoPorfolio/about" style="position: absolute; top: 20%; left: 17%; text-decoration: none;">
