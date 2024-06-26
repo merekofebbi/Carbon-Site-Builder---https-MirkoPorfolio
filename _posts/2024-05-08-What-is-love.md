@@ -3,7 +3,7 @@ layout: post
 title: "MECHANICUS"
 author: "Generic Human 2"
 categories: contact
-tags: [sample]
+tags: [art, sculpture]
 image: https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg
 ---
 
