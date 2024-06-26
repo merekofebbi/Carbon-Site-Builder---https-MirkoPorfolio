@@ -15,10 +15,10 @@ permalink: /map
 
 <div style="position: relative; display: inline-block;">
     <img src="https://mirkoPortfolio.b-cdn.net/High-Resolution-World-Map-scaled.jpg" alt="World Map>
-    <button style="position: absolute; top: 10px; left: 10px; background-color: rgba(255, 255, 255, 0.5); border: none; padding: 8px 16px; cursor: pointer;">
-        Button 1
+    <button style="position: absolute; top: 10px; right: 10px; background-color: rgba(255, 255, 255, 0.5); border: 5px; padding: 8px 16px; cursor: pointer;">
+       1
     </button>
-    <button style="position: absolute; top: 10px; right: 10px; background-color: rgba(255, 255, 255, 0.5); border: none; padding: 8px 16px; cursor: pointer;">
-        Button 2
+    <button style="position: absolute; top: 20px; right: 50px; background-color: rgba(255, 255, 255, 0.5); border: 5px; padding: 8px 16px; cursor: pointer;">
+       2
     </button>
 </div>
