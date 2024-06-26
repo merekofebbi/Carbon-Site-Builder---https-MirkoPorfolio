@@ -19,7 +19,7 @@ permalink: /map
     <button style="position: absolute; top: 20%; left: 17%; background-color: rgba(255, 255, 255, 0.5); border: 1px solid black; border-radius: 15px; padding: 4px 8px; cursor: pointer;">
        1
     </button>
-    <button style="position: absolute; top: 18%; left: 75%; background-color: rgba(255, 255, 255, 0.5); border: 1px solid black; border-radius: 15px; padding: 4px 8px; cursor: pointer;"; onclick = "/about">
+    <button style="position: absolute; top: 18%; left: 75%; background-color: rgba(255, 255, 255, 0.5); border: 1px solid black; border-radius: 15px; padding: 4px 8px; cursor: pointer;"; onclick : "/about">
        2
     </button>
 </div>
