@@ -3,15 +3,6 @@ layout: page
 title: Map
 permalink: /map
 ---
-<!-- <iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANx5ELozX0dIchLEQ7jAyVFV019xhsmeA&q=Space+Needle,Seattle+WA">
-</iframe> -->
 
 # Interactive World Map
 <div style="position: relative; display: inline-block;">
