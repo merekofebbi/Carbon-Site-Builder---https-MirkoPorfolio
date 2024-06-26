@@ -2,7 +2,7 @@
 layout: post
 title: "MECHANICUS"
 author: "Generic Human 2"
-categories: facts
+categories: contact
 tags: [sample]
 image: https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg
 ---
