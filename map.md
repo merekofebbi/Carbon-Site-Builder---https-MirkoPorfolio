@@ -14,11 +14,11 @@ permalink: /map
 </iframe> -->
 
 <div style="position: relative; display: inline-block;">
-    <img src="https://mirkoPortfolio.b-cdn.net/High-Resolution-World-Map-scaled.jpg" alt="World Map>
-    <button style="position: absolute; top: 10px; right: 10px; background-color: rgba(255, 255, 255, 0.5); border: 5px; padding: 8px 16px; cursor: pointer;">
+    <img src="https://mirkoPortfolio.b-cdn.net/High-Resolution-World-Map-scaled.jpg" alt="World Map">
+    <button style="position: absolute; top: 40px; left: 80px; background-color: rgba(255, 255, 255, 0.5); border: 1px solid black; border-radius: 15px; padding: 4px 8px; cursor: pointer;">
        1
     </button>
-    <button style="position: absolute; top: 20px; right: 50px; background-color: rgba(255, 255, 255, 0.5); border: 5px; padding: 8px 16px; cursor: pointer;">
+    <button style="position: absolute; top: 45px; left: 370px; background-color: rgba(255, 255, 255, 0.5); border: 1px solid black; border-radius: 15px; padding: 4px 8px; cursor: pointer;">
        2
     </button>
 </div>
