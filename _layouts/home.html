@@ -2,14 +2,14 @@
 layout: default
 title: Home
 ---
+{% assign pinned_post = site.posts | where: "pinned", true | first %}
 
-{% assign pinned_post = site.posts | where: "pin", true | first %}
 {% if pinned_post %}
   {% include featured-post.html post=pinned_post %}
 {% endif %}
 
 {% for post in paginator.posts %}
-  {% unless post == pinned_post %}
+  {% unless post.pinned %}
     {% include featured-post.html post=post %}
   {% endunless %}
 {% endfor %}
