@@ -5,7 +5,7 @@ author: "Generic Human 2"
 categories: contact
 tags: [art, sculpture]
 image: https://mirkoPortfolio.b-cdn.net/MECHANICUS/1.jpg
-pinned: false 
+pinned: true 
 ---
 
 # MECHANICUS 8
