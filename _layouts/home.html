@@ -3,8 +3,7 @@ layout: default
 title: Home
 ---
 
-{% assign pinned_post_filename = "2024-05-08-What-is-love.md" %}
-{% assign pinned_post = site.posts | where: "path", pinned_post_filename | first %}
+{% assign pinned_post = site.posts | where: "pinned", true | first %}
 
 {% if pinned_post %}
   <!-- Include the pinned post -->
@@ -13,11 +12,10 @@ title: Home
 
 <!-- List other posts excluding the pinned one -->
 {% for post in paginator.posts %}
-  {% unless post.path contains pinned_post_filename %}
+  {% unless post.pinned %}
     {% include featured-post.html post=post %}
   {% endunless %}
 {% endfor %}
-
 
 <!-- Pagination links -->
 <div class="pagination">
