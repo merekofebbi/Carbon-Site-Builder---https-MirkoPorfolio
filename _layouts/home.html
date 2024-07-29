@@ -5,17 +5,29 @@ title: Home
 
 {% assign pinned_post = site.posts | where: "pinned", true | first %}
 
+<!-- Debugging Information -->
+<div>
+  <h2>Pinned Post Debug</h2>
+  {% if pinned_post %}
+    <p>Title: {{ pinned_post.title }}</p>
+    <p>URL: {{ pinned_post.url }}</p>
+    <p>Image: {{ pinned_post.image }}</p>
+  {% else %}
+    <p>No pinned post found.</p>
+  {% endif %}
+</div>
+
 {% if pinned_post %}
   <!-- Include the pinned post -->
   {% include featured-post.html post=pinned_post %}
 {% endif %}
 
 <!-- List other posts excluding the pinned one -->
-<!-- {% for post in paginator.posts %}
+{% for post in paginator.posts %}
   {% unless post.pinned %}
     {% include featured-post.html post=post %}
   {% endunless %}
-{% endfor %} -->
+{% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
