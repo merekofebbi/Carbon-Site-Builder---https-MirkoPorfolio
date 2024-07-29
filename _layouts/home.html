@@ -2,14 +2,19 @@
 layout: default
 title: Home
 ---
-{% assign pinned_post = site.posts | where: 'pinned', true | first %}
+
+{% assign pinned_post = site.posts | where: "pinned", true | first %}
 
 {% if pinned_post %}
-  {% include featured-post.html post=pinned_post %}
+  <!-- Include the pinned post -->
+  <div class="pinned-post">
+    {% include featured-post.html post=pinned_post %}
+  </div>
 {% endif %}
 
+<!-- List other posts excluding the pinned one -->
 {% for post in paginator.posts %}
-  {% unless post == pinned_post %}
+  {% unless post.pinned %}
     {% include featured-post.html post=post %}
   {% endunless %}
 {% endfor %}
