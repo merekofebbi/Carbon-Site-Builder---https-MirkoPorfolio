@@ -2,10 +2,17 @@
 layout: default
 title: Home
 ---
-<!-- 
+
+{% assign pinned_post = site.posts | where: "pin", true | first %}
+{% if pinned_post %}
+  {% include featured-post.html post=pinned_post %}
+{% endif %}
+
 {% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% endfor %} -->
+  {% unless post == pinned_post %}
+    {% include featured-post.html post=post %}
+  {% endunless %}
+{% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
