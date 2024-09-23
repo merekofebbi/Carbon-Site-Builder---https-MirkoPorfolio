@@ -29,7 +29,6 @@ nav {
 		display: inline;
 	}
 
-
 	a {
 		margin: 0 3px;
 		padding: 14px 10px;
@@ -38,25 +37,27 @@ nav {
 
 		@media #{$mid-point} {
 			display: inline;
-			border-bottom: 1px solid rgba(255,255,255,0);
-			color: rgba(255,255,255,.8);
+			border-bottom: 1px solid rgba(255, 255, 255, 0);
+			color: rgba(255, 255, 255, .8);
 		}
 
-
 		&.nav-toggle {
-			display: block;
+			display: inline;
 			position: absolute;
 			right: 10px;
-			font-size: 4.5em;
+			top: 0px; /* Adjust the vertical position */
+			font-size: 2.5em; /* Increase font size for better visibility */
+			padding: 10px; /* Add padding to make it easier to click */
+			cursor: pointer; /* Change cursor to pointer */
 			border: 0;
 			text-shadow: 0;
-			padding: 0 !important;
 			@media #{$mid-point} {
 				display: none;
 			}
 
 			&:hover {
 				border: 0;
+				color: rgba(255, 255, 255, 1); /* Add a hover effect */
 			}
 		}
 	}
@@ -64,5 +65,5 @@ nav {
 	a.active {
 		border-bottom: 5px solid #ffa74d;
 	}
-
 }
+
