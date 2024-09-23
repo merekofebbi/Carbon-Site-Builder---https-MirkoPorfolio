@@ -46,7 +46,7 @@ nav {
 			position: absolute;
 			right: 10px;
 			top: 0px; /* Adjust the vertical position */
-			font-size: 2.5em; /* Increase font size for better visibility */
+			font-size: 5em; /* Increase font size for better visibility */
 			padding: 10px; /* Add padding to make it easier to click */
 			cursor: pointer; /* Change cursor to pointer */
 			border: 0;
@@ -57,7 +57,7 @@ nav {
 
 			&:hover {
 				border: 0;
-				color: rgba(255, 0, 0, 1); /* Add a hover effect */
+				color: rgba(255, 166, 60, 1); /* Add a hover effect */
 			}
 		}
 	}
