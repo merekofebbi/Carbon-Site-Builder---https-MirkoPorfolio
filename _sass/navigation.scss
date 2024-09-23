@@ -44,14 +44,15 @@ nav {
 
 
 		&.nav-toggle {
-			display: inline;
+			display: block;
 			position: absolute;
 			right: 10px;
-			top: -7px;
+<!-- 			top: -7px; -->
 			font-size: 2.5em;
 			border: 0;
 			text-shadow: 0;
-			padding: 10 !important;
+			padding: 0 !important;
+
 			@media #{$mid-point} {
 				display: none;
 			}
